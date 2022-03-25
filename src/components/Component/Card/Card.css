@@ -1,0 +1,8 @@
+.show-selecteditem {
+  display: flex;
+  align-items: center;
+}
+.show-selecteditem img {
+  border-radius: 25px;
+  margin-right: 5px;
+}

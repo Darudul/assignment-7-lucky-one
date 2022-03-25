@@ -10,7 +10,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-bottom: 20px;
-
 }
 
 .cart-container {
@@ -23,4 +22,7 @@
   border: none;
   border-radius: 5px;
   padding: 8px;
+}
+.setColor {
+  color: blue;
 }

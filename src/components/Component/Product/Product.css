@@ -8,3 +8,18 @@
 .product-info img{
   border-radius: 20px;
 }
+.styles-btn{
+  background-color: bisque;
+  border: none;
+  padding:0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 130px;
+  color:forestgreen;
+  font-weight: 900;
+}
+.btn-gap{
+  padding-left: 5px;
+  padding-right: 10px;
+}
