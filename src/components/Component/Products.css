@@ -1,4 +1,26 @@
-.products-info {
+.perfume-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.products-container {
+  margin-top: 20px;
+  background-color: azure;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+
+}
+
+.cart-container {
+  background-color: burlywood;
+}
+.style-btn {
+  background-color: bisque;
+  color: darkgreen;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
 }

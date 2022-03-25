@@ -1,5 +1,5 @@
 import React from "react";
-
+import './Product.css'
 const Product = (props) => {
   console.log(props);
   const { picture, name, price } = props.product;
@@ -8,7 +8,7 @@ const Product = (props) => {
       <img src={picture} width="300px" height="300px" />
       <h4>Name:{name}</h4>
       <p>Price:{price}</p>
-      <button>ADD TO CART</button>
+      <button className="style-btn">ADD TO CART</button>
     </div>
   );
 };
