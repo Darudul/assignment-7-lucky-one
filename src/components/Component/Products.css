@@ -1,6 +1,6 @@
 .perfume-container {
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 3fr 1fr;
 }
 
 .products-container {
@@ -25,4 +25,18 @@
 }
 .setColor {
   color: blue;
+}
+
+@media screen and (max-width: 688px) {
+  .products-container {
+    grid-template-columns: repeat(1, 1fr);
+    overflow-x: hidden;
+  }
+  .perfume-container {
+    grid-template-columns: 3fr;
+    padding-bottom: 20px;
+  }
+  .style-btn {
+    margin-bottom: 20px;
+  }
 }

@@ -4,3 +4,10 @@
   margin: 30px 100px;
   padding: 20px;
 }
+@media screen and (max-width: 688px) {
+  .react-works {
+    margin: 10px 10px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+}
