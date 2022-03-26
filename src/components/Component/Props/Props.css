@@ -1,4 +1,4 @@
-.props-state {
+.props-style {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,13 +10,13 @@
   padding: 20px;
 }
 @media screen and (max-width: 688px) {
-  .props-state {
+  .props-style {
     display: block;
     margin: 10px 10px;
     padding: 0px;
     overflow-x: hidden;
   }
-  .style-prpsstate{
+  .style-prpsstate {
     margin: 0px 10px;
   }
 }

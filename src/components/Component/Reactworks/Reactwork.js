@@ -8,13 +8,15 @@ const Reactwork = () => {
         React is a very popular JavaScript library.React contains a collection
         of reusable JavaScript code snippets used for user interface (UI)
         building called components.The Document Object Model (DOM) presents a
-        web page in a data tree structure. ReactJS stores Virtual DOM trees in
+        web page in a data tree structure. React JS stores Virtual DOM trees in
         the memory. By doing so, React can apply updates to specific parts of
         the data tree, which is faster than re-rendering the entirety of the DOM
         tree.Whenever there’s a change in data, ReactJS will generate a new
         Virtual DOM tree and compare it with the previous one to find the
         quickest possible way to implement changes in the real DOM. This process
-        is known as diffing.
+        is known as diffing.React can use it to help build single page
+        applications and mobile apps, or to build complex apps if you utilise it
+        with other libraries.
       </p>
     </div>
   );

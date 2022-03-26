@@ -6,10 +6,10 @@ import Props from "./components/Component/Props/Props";
 function App() {
   return (
     <div className="App">
-      <h2 className="header-app">
-        buyer can choose
-        <br /> any item
-      </h2>
+      <h1 className="header-app">
+        Afsana's Perfume
+        <br /> Store
+      </h1>
       <Products></Products>
       <Reactwork></Reactwork>
       <Props></Props>

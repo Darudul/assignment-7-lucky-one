@@ -44,7 +44,7 @@ const Products = () => {
         ))}
       </div>
       <div className="cart-container">
-        <h4 className="setColor">selected perfumes</h4>
+        <h3 className="set-color">Selected perfumes</h3>
         {cart.map((item) => (
           <Card key={item.id} item={item}></Card>
         ))}
