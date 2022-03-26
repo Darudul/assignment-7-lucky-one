@@ -8,7 +8,7 @@ const Product = ({ product, handleAddToCart }) => {
   const { picture, name, price } = product;
   return (
     <div className="product-info">
-      <img src={picture} width="300px" height="300px" />
+      <img src={picture} width="300px" height="300px" alt="" />
       <h4>Name:{name}</h4>
       <p>Price:{price}</p>
       <button onClick={() => handleAddToCart(product)} className="styles-btn">

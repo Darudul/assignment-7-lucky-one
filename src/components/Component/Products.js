@@ -5,6 +5,8 @@ import "./Products.css";
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
+  const [choose, setChoose] = useState([]);
+  // const [choose, setChoose] = useState([]);
   useEffect(() => {
     fetch("products.json")
       .then((res) => res.json())
@@ -15,6 +17,7 @@ const Products = () => {
     const newCart = [...cart, product];
     setCart(newCart);
   };
+
   return (
     <div className="perfume-container">
       <div className="products-container">
@@ -31,7 +34,8 @@ const Products = () => {
         {cart.map((item) => (
           <Card key={item.id} item={item}></Card>
         ))}
-        <button className="style-btn">Choose one for me</button> <br /> <br />
+        <button className="style-btn">Choose one for me</button>
+        <br /> <br />
         <button className="style-btn">Choose Again</button>
       </div>
     </div>
