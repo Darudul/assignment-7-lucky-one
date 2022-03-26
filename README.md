@@ -2,7 +2,7 @@
 
 ## Live website link:
 
-(https://soft-assignment-8-f54d9b.netlify.app/).
+click here: https://soft-assignment-8-f54d9b.netlify.app/
 
 <!-- ## Available Scripts
 

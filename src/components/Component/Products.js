@@ -5,7 +5,7 @@ import "./Products.css";
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
-  const [choose, setChoose] = useState([]);
+
   // const [choose, setChoose] = useState([]);
   useEffect(() => {
     fetch("products.json")
@@ -16,6 +16,20 @@ const Products = () => {
   const handleAddToCart = (product) => {
     const newCart = [...cart, product];
     setCart(newCart);
+  };
+
+  const chooseOneForMe = (cart) => {
+    const newCart = [...cart];
+    for (let i = newCart.length - 1; i > 0; i--) {
+      const randomClick = Math.floor(Math.random() * (i + 1));
+      let temp = newCart[randomClick];
+      newCart[randomClick] = newCart[i];
+      newCart[i] = temp;
+    }
+    setCart(newCart.slice(-1));
+  };
+  const removeTocart = () => {
+    setCart([]);
   };
 
   return (
@@ -34,9 +48,13 @@ const Products = () => {
         {cart.map((item) => (
           <Card key={item.id} item={item}></Card>
         ))}
-        <button className="style-btn">Choose one for me</button>
+        <button onClick={() => chooseOneForMe(cart)} className="style-btn">
+          Choose one for me
+        </button>
         <br /> <br />
-        <button className="style-btn">Choose Again</button>
+        <button onClick={removeTocart} className="style-btn">
+          Choose Again
+        </button>
       </div>
     </div>
   );
