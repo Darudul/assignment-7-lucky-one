@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="header-app">
-        Afsana's Perfume
+        Afsana's Perfume store
         <br /> Store
       </h1>
       <Products></Products>
